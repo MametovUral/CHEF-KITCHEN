@@ -1,0 +1,67 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--c-primary);
+  height: 450px;
+  border-radius: 55px;
+  .wrapper-title {
+    position: relative;
+    padding-left: 102px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      color: var(--c-white);
+      font-size: 65px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p {
+      color: var(--c-secondary-font);
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 59px;
+      margin-bottom: 20px;
+    }
+    .wrapper-btn {
+      width: 202px;
+      height: 55px;
+    }
+    .imgs-leaf__2{
+        position: absolute;
+        left: -55px;
+        bottom: -77px;
+    }
+  }
+  .wrapper-imgs {
+    position: relative;
+    .imgs-circle {
+      top: 34px;
+      right: 67px;
+      position: absolute;
+    }
+    .imgs-cook {
+      position: absolute;
+      top: 35px;
+      right: 75px;
+    }
+    .imgs-peas__1 {
+      position: absolute;
+      bottom: -127px;
+      right: -91px;
+    }
+    .imgs-leaf__1 {
+      position: absolute;
+      top: -72px;
+      right: 550px;
+    }
+    .imgs-blade {
+      position: absolute;
+      bottom: -68px;
+      right: 585px;
+    }
+  }
+}

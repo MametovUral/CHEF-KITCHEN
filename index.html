@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello CHEF KITCHEN</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHEF KITCHEN</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <div class="header__head">
+          <nav class="navbar">
+            <div class="navbar__logo">
+              <a href="/">
+                <img src="./assets/icons/c-logo.svg" alt="logo"
+              /></a>
+            </div>
+            <div class="navbar__menu">
+              <ul>
+                <li class="active"><a>Menu</a></li>
+                <li><a>Delivery</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Contacts</a></li>
+              </ul>
+            </div>
+            <div class="navbar__right">
+              <div class="navbar__contact">
+                <span class="navbar__contact-phone">
+                  <i class="fa-solid fa-phone-volume"></i>591 902 883</span
+                >
+                <select class="navbar__language">
+                  <option value="en">EN</option>
+                  <option value="uz">UZ</option>
+                </select>
+              </div>
+              <div class="navbar__account">
+                <button class="navbar__account-btn btn">
+                  <i class="fa-regular fa-circle-user"></i>sign in
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="header__body">
+          <div class="header__wrapper">
+            <div class="wrapper-title">
+              <h1>
+                Your <br />
+                personal <br />
+                cook
+              </h1>
+              <p>The balanced diet for every day</p>
+              <button class="wrapper-btn btn">Make your choice</button>
+              <div class="imgs-leaf__2">
+                <img src="./assets/icons/c-leaf-2.svg" alt="leaf" />
+              </div>
+            </div>
+            <div class="wrapper-imgs">
+              <div class="imgs-circle">
+                <img src="./assets/icons/c-circel.svg" alt="circel" />
+              </div>
+              <div class="imgs-cook">
+                <img src="./assets/imgs/c-cook-l.png" alt="cook" />
+              </div>
+              <div class="imgs-peas__1">
+                <img src="./assets/icons/c-peas.svg" alt="peas" />
+              </div>
+              <div class="imgs-leaf__1">
+                <img src="./assets//icons//c-leaf-1.svg" alt="leaf" />
+              </div>
+              <div class="imgs-blade">
+                <img src="./assets/icons/c-blade-1.svg" alt="blade" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="category container">
+          <h4 class="title">Our MENU</h4>
+          <div class="category__content">
+            <ul class="category__content-fast">
+              <li class="active">
+                <a>Power<span>1800 kcal</span></a>
+              </li>
+              <li>
+                <a>Slim<span>1500 kcal</span></a>
+              </li>
+              <li>
+                <a>Balance<span>1300 kcal</span></a>
+              </li>
+              <li>
+                <a>Slim<span>1500 kcal</span></a>
+              </li>
+              <li>
+                <a>Balance<span> 1300 kcal</span></a>
+              </li>
+              <li>
+                <a>Slim<span>1500 kcal</span></a>
+              </li>
+              <li>
+                <a>Balance<span>1300 kcal</span></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
