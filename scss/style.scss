@@ -2,6 +2,8 @@
 @import "./base";
 @import "./colors";
 @import "./container";
+@import "./swiper";
+
 
 body {
   // background-color: var(--g-white);
@@ -17,7 +19,7 @@ body {
   border-radius: 32px;
   background-color: var(--c-secondary);
 }
-.header{
+.header {
   margin-bottom: 135px;
 }
 .header__head {
@@ -31,6 +33,9 @@ body {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+
+
+
 
 @import "./parts/navbar";
 @import "./parts/header-wrapper";
