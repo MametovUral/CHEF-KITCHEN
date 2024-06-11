@@ -1,0 +1,49 @@
+.promotions {
+  position: relative;
+  background-color: var(--c-primary);
+  margin-bottom: 100px;
+  &-container {
+    display: flex;
+    padding: 21px 0 30px 0;
+    .promotions-deck {
+      width: 386px;
+      h3 {
+        color: var(--c-white);
+
+        font-size: 40px;
+
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      p {
+        color: var(--c-white);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%;
+        margin-bottom: 16px;
+      }
+      .btn {
+        width: 182px;
+        height: 62px;
+      }
+    }
+    .promotions-img {
+      position: relative;
+      &__item {
+        position: absolute;
+      }
+
+      .item-dish {
+        top: -110px;
+        
+      }
+    }
+  }
+  .item-verdure {
+    position: absolute;
+    top: -40px;
+    right: 40px;
+  }
+}

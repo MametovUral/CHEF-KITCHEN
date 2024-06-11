@@ -4,7 +4,6 @@
 @import "./container";
 @import "./swiper";
 
-
 body {
   // background-color: var(--g-white);
   // background-color: gold;
@@ -34,9 +33,9 @@ body {
   margin-bottom: 40px;
 }
 
-
-
-
 @import "./parts/navbar";
 @import "./parts/header-wrapper";
 @import "./parts/our-menu";
+@import "./parts/delivery-areas";
+@import "./parts/our-advantages";
+@import "./parts/promotions";
