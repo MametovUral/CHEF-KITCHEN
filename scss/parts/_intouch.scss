@@ -1,0 +1,68 @@
+.intouch {
+  display: flex;
+  justify-content: space-between;
+
+  //   height: 400px;
+  &__left {
+    &-img {
+      position: relative;
+      .inimg {
+        position: absolute;
+      }
+      .intomato {
+        top: 23px;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    &-title {
+      max-width: 387px;
+      h2 {
+        color: var(--c-primary);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: 18px;
+      }
+      p {
+        color: var(--c-secondary-font);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+    &-form {
+      width: 388px;
+      .right-form {
+        display: flex;
+        gap: 13px;
+        margin-bottom: 23px;
+      }
+      .yn {
+        margin-bottom: 23px;
+      }
+      .form-input {
+        width: 100%;
+        border-radius: 32px;
+        background: #f4f4f4;
+        padding: 18px 27px;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05);
+
+        color: #656565;
+
+        font-size: 16px;
+
+        font-weight: 400;
+      }
+      .right-btn {
+        .btn {
+          width: 202px;
+          height: 55px;
+        }
+      }
+    }
+  }
+}
