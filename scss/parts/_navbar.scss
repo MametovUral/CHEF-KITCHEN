@@ -61,6 +61,7 @@
         padding-top: 2px;
         gap: 20px;
         text-transform: uppercase;
+        transition: background-color 0.5s ease-out;
 
         &:hover {
           background-color: var(--c-primary);
@@ -70,6 +71,27 @@
           margin-left: 5px;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .navbar {
+    gap: 18px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .navbar {
+   
+    &__menu {
+      ul {
+        gap: 20px;
+      }
+    }
+    &__right{
+      gap: 5px;
+
     }
   }
 }

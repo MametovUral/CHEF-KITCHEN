@@ -29,11 +29,17 @@
     .wrapper-btn {
       width: 202px;
       height: 55px;
+      transition: background-color 0.5s ease-out;
+
+      &:hover {
+        background-color: var(--c-white);
+        color: var(--c-primary);
+      }
     }
-    .imgs-leaf__2{
-        position: absolute;
-        left: -55px;
-        bottom: -77px;
+    .imgs-leaf__2 {
+      position: absolute;
+      left: -20px;
+      bottom: -37px;
     }
   }
   .wrapper-imgs {
@@ -50,8 +56,8 @@
     }
     .imgs-peas__1 {
       position: absolute;
-      bottom: -127px;
-      right: -91px;
+      bottom: -71px;
+      right: -34px;
     }
     .imgs-leaf__1 {
       position: absolute;
@@ -62,6 +68,73 @@
       position: absolute;
       bottom: -68px;
       right: 585px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .header__wrapper {
+    .wrapper-title {
+      padding-left: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .header__wrapper {
+    .wrapper-title {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .header__wrapper {
+    .wrapper-title {
+      h1 {
+        font-size: 45px;
+        margin-bottom: 5px;
+      }
+      p {
+        color: var(--c-secondary-font);
+        font-size: 25px;
+
+        margin-bottom: 1px;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .wrapper-btn {
+        width: 150px;
+        height: 55px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 980px) {
+  .header__wrapper {
+    .wrapper-imgs {
+      background-color: goldenrod;
+      .imgs-cook {
+        img {
+          width: 450px;
+        }
+      }
+      .imgs-circle {
+        img {
+          width: 450px;
+        }
+      }
+      .imgs-peas__1 {
+        right: -14px;
+      }
+      .imgs-leaf__1 {
+        right: 410px;
+      }
+      .imgs-blade {
+        right: 425px;
+      }
     }
   }
 }

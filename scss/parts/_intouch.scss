@@ -65,6 +65,10 @@
         .btn {
           width: 202px;
           height: 55px;
+          transition: background-color 0.5s ease-out;
+          &:hover {
+            background-color: var(--c-primary);
+          }
         }
         .btn-plane {
           display: flex;
@@ -75,8 +79,20 @@
           i {
             font-size: 25px;
           }
+          &:hover {
+            background-color: var(--c-secondary);
+          }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1167px) {
+  .intouch {
+    justify-content: center;
+    &__left {
+      display: none;
     }
   }
 }

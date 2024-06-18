@@ -5,6 +5,7 @@
     &-fast {
       display: flex;
       justify-content: space-between;
+
       li {
         cursor: pointer;
         &:hover {
@@ -223,6 +224,7 @@
       padding: 10px 25px 10px 13px;
       border-radius: 15px;
       background-color: var(--c-white);
+
       .product-gel {
         display: flex;
         justify-content: center;
@@ -298,18 +300,93 @@
         .btn {
           width: 241px;
           height: 55px;
+          transition: background-color 0.5s ease-out;
+          &:hover {
+            background-color: var(--c-primary);
+          }
         }
       }
     }
     .imgs-leaf__2 {
       position: absolute;
-      top: -50px;
-      right: -31px;
+      top: -30px;
+      right: -6px;
     }
     .imgs-blade__2 {
       position: absolute;
       bottom: -91px;
       left: 49.3%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .category {
+    &__product {
+      &-sort {
+        flex-direction: column;
+        gap: 40px;
+      }
+      &-order {
+        .product-order {
+          .btn {
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .category {
+    &__product {
+      &-order {
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+        .product-gel {
+          flex-direction: column;
+          .btn-gel {
+            justify-content: center;
+            width: 100%;
+            background-color: var(--c-white);
+            color: var(--c-primary);
+            img {
+              display: none;
+            }
+            i {
+              display: none;
+            }
+          }
+          p {
+            width: 100%;
+          }
+        }
+        .product-order {
+          width: 100%;
+          .btn {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 960px) {
+  .category {
+    &__content {
+      &-fast {
+        overflow-x: scroll;
+        li {
+          a {
+            width: max-content;
+          }
+          &:not(:last-child) {
+            margin-right: 8px;
+          }
+        }
+      }
     }
   }
 }

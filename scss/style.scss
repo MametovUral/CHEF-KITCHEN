@@ -10,6 +10,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.d-n {
+  display: none;
+}
+
 main {
   margin-bottom: 190px;
 }
@@ -34,6 +38,96 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+.horizontal-shake {
+  animation: horizontal-shaking 2s infinite;
+}
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.strong-hover-shake {
+  animation: tilt-shaking 0.15s infinite;
+}
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.rise-shake {
+  animation: jump-shaking 2s infinite;
+}
+@keyframes jump-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-9px);
+  }
+  35% {
+    transform: translateY(-9px) rotate(17deg);
+  }
+  55% {
+    transform: translateY(-9px) rotate(-17deg);
+  }
+  65% {
+    transform: translateY(-9px) rotate(17deg);
+  }
+  75% {
+    transform: translateY(-9px) rotate(-17deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.circle-animation {
+  animation: animName 2.9s linear infinite;
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .btn {
+    
+    font-size: 12px;
+    
+    border-radius: 32px;
+    
+  }
 }
 
 @import "./parts/navbar";

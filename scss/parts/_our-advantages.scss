@@ -3,6 +3,8 @@
   &-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     .advantages-item {
       width: 183px;
       text-align: center;
@@ -31,6 +33,23 @@
           line-height: 120%;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  .advantages {
+    &-wrapper {
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1047px) {
+  .advantages {
+    &-wrapper {
+      gap: 30px;
+      justify-content: center;
     }
   }
 }
