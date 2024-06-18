@@ -36,6 +36,7 @@
     }
     .promotions-img {
       position: relative;
+
       &__item {
         position: absolute;
       }
@@ -46,14 +47,27 @@
     }
   }
   .item-verdure {
-    // display: none;
-  
     position: absolute;
     top: -40px;
     right: 40px;
   }
 }
 
-@media only screen and (max-width: 1380px) {
-  
+@media only screen and (max-width: 1260px) {
+  .promotions {
+    
+    &-container {
+    padding: 60px;
+     
+      .promotions-img {
+        display: none;
+       
+
+       
+      }
+    }
+    .item-verdure {
+      display: none;
+    }
+  }
 }
