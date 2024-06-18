@@ -1,16 +1,16 @@
 .intouch {
   display: flex;
   justify-content: space-between;
-
-  //   height: 400px;
+  padding-top: 60px;
   &__left {
     &-img {
       position: relative;
       .inimg {
+        top: -42px;
         position: absolute;
       }
       .intomato {
-        top: 23px;
+        top: -20px;
       }
     }
   }
@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     gap: 22px;
+
     &-title {
       max-width: 387px;
       h2 {
@@ -36,6 +37,7 @@
     }
     &-form {
       width: 388px;
+
       .right-form {
         display: flex;
         gap: 13px;
@@ -58,9 +60,21 @@
         font-weight: 400;
       }
       .right-btn {
+        display: flex;
+        gap: 1px;
         .btn {
           width: 202px;
           height: 55px;
+        }
+        .btn-plane {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 83px;
+          background-color: var(--c-primary);
+          i {
+            font-size: 25px;
+          }
         }
       }
     }
